@@ -1,4 +1,4 @@
-# final_project_ih
+# final_project_ih_jun_2020
 
 ## Deep learning
 
