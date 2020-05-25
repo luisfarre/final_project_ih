@@ -26,7 +26,9 @@ We also created a .csv file with all the data of those images and boxes around 7
 
 Once we had the .tsv file we uploaded it to google cloud storage bucket and made it public in order to be able to download all images from their urls through a google cloud url transfer data and store them in the bucket.
 
-google cloud storage bucket - https://console.cloud.google.com/storage/browser/data_images_ih
+images_data_boat_project.tsv file https://storage.googleapis.com/data_images_ih/tsv_files/images_data_boat_project_file.tsv
+
+google cloud storage bucket - https://console.cloud.google.com/storage/browser/data_images_ih 
 
 
 #### Image preprocessing, creating X_data and y_data
