@@ -27,4 +27,8 @@ We also created a .csv file with all the data of those images and boxes around 7
 Once we had the .tsv file we uploaded it to google cloud storage bucket and made it public in order to be able to download all images from their urls through a google cloud url transfer data and store them in the bucket.
 
 
+#### Image preprocessing, creating X_data and y_data
 
+- Accessing all images in the bucket, resize, convert to numpy array.
+- Match each image numpy array with the boxes data for that image.
+- Create X_data and y_data
