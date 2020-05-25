@@ -47,12 +47,12 @@ Yolo v1, v2, v3 (https://github.com/FMsunyh/keras-yolo, https://github.com/ecara
 - Each box should go with one image? how to indicate those images having more than one box?
 - There are two kinds of boxes Xmin, Xmax, Ymin, Ymax. But also XClick1X, XClick2X,	XClick3X,	XClick4X,	XClick1Y,	XClick2Y,	XClick3Y,	XClick4Y? xclick are manually drawn boxes using the method presented in [1], were the annotators click on the four extreme points of the object. How to proceed.
 
+- If at some point we want to train for more than one Label we should add Label to y_data
+
 - Do we need to add more info to y_data (Label, 'IsOccluded', 'IsTruncated', 'IsGroupOf', 'IsDepiction', 'IsInside')
 
-IsOccluded: Indicates that the object is occluded by another object in the image.
-IsTruncated: Indicates that the object extends beyond the boundary of the image.
-IsGroupOf: Indicates that the box spans a group of objects (e.g., a bed of flowers or a crowd of people). We asked annotators to use this tag for cases with more than 5 instances which are heavily occluding each other and are physically touching.
-IsDepiction: Indicates that the object is a depiction (e.g., a cartoon or drawing of the object, not a real physical instance).
-IsInside: Indicates a picture taken from the inside of the object (e.g., a car interior or inside of a building).
-
-- If at some point we want to train for more than one Label we should add Label to y_data
+- IsOccluded: Indicates that the object is occluded by another object in the image.
+- IsTruncated: Indicates that the object extends beyond the boundary of the image.
+- IsGroupOf: Indicates that the box spans a group of objects (e.g., a bed of flowers or a crowd of people). We asked annotators to use this tag for cases with more than 5 instances which are heavily occluding each other and are physically touching.
+- IsDepiction: Indicates that the object is a depiction (e.g., a cartoon or drawing of the object, not a real physical instance).
+- IsInside: Indicates a picture taken from the inside of the object (e.g., a car interior or inside of a building).
