@@ -35,4 +35,17 @@ google cloud storage bucket - https://console.cloud.google.com/storage/browser/d
 
 - Accessing all images in the bucket, resize, convert to numpy array.
 - Match each image numpy array with the boxes data for that image.
-- Create X_data and y_data
+- Create X_data: image numpy array
+- Create y_data: box locations and confidence (Xmin, Xmax, Ymin, Ymax, confidence)
+
+#### Creating the neuronal network
+single shot vs multi shot
+ssd model
+Resnet and keras
+Yolo v1, v2, v3 (https://github.com/FMsunyh/keras-yolo, https://github.com/ecaradec/humble-yolo)
+
+#### Doubts
+- Each box should go with one image? how to indicate those images having more than one box?
+- There are two kinds of boxes Xmin, Xmax, Ymin, Ymax. But also XClick1X	XClick2X	XClick3X	XClick4X	XClick1Y	XClick2Y	XClick3Y	XClick4Y? How to proceed.
+- Do we need to add more info to y_data (Label, 'IsOccluded', 'IsTruncated', 'IsGroupOf', 'IsDepiction', 'IsInside')
+- If at some point we want to train for more than one Label we should add Label to y_data
