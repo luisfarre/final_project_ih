@@ -15,10 +15,10 @@ The real dataset has around 9 million images, and 6k classes. In order to make t
 
 Data used:
 
-classes: class_descriptions_boxable.csv
-boxes: oidv6-train-annotations-bbox.csv
-images: train-images-boxable-with-rotation.csv
-10 open-images-dataset-train_n.tsv files with all images urls.
+- classes: class_descriptions_boxable.csv
+- boxes: oidv6-train-annotations-bbox.csv
+- images: train-images-boxable-with-rotation.csv
+- 10 open-images-dataset-train_n.tsv files with all images urls.
 
 With all those datasets we managed to create a .tsv file with all images urls containing boats, around 26k 
 
