@@ -47,7 +47,7 @@ Yolo v1, v2, v3 (https://github.com/FMsunyh/keras-yolo, https://github.com/ecara
 - Each box should go with one image? how to indicate those images having more than one box?
 - There are two kinds of boxes Xmin, Xmax, Ymin, Ymax. But also XClick1X, XClick2X,	XClick3X,	XClick4X,	XClick1Y,	XClick2Y,	XClick3Y,	XClick4Y? xclick are manually drawn boxes using the method presented in [1], were the annotators click on the four extreme points of the object. How to proceed.
 
-- If at some point we want to train for more than one Label we should add Label to y_data
+- If at some point we want to train for more than one class we should add Label to y_data
 
 - Do we need to add more info to y_data (Label, 'IsOccluded', 'IsTruncated', 'IsGroupOf', 'IsDepiction', 'IsInside')
 
