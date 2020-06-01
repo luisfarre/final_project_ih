@@ -1,7 +1,12 @@
 [net]
 # Testing
+<<<<<<< HEAD
+batch=64
+subdivisions=16
+=======
 batch=4
 subdivisions=2
+>>>>>>> dfa5e4ca1a53d9271c96d9844a9a71571c70bb8a
 # Training
 #batch=64
 #subdivisions=16
@@ -17,9 +22,15 @@ hue=.1
 
 learning_rate=0.001
 burn_in=1000
+<<<<<<< HEAD
+max_batches = 3020
+policy=steps
+steps=2400,2700
+=======
 max_batches = 1000
 policy=steps
 steps=800,900
+>>>>>>> dfa5e4ca1a53d9271c96d9844a9a71571c70bb8a
 scales=.1,.1
 
 
