@@ -1,0 +1,31 @@
+Enter Image Path: test/darknet/test_images/0068af751c04c281.jpg: Predicted in 12.590937 seconds.
+Boat: 72%
+Enter Image Path: test/darknet/test_images/005547ec8896223e.jpg: Predicted in 12.376673 seconds.
+Boat: 50%
+Boat: 80%
+Boat: 73%
+Boat: 52%
+Boat: 50%
+Boat: 49%
+Boat: 44%
+Boat: 36%
+Boat: 34%
+Boat: 33%
+Boat: 31%
+Boat: 21%
+Enter Image Path: test/darknet/test_images/008a40758f53cef0.jpg: Predicted in 11.275255 seconds.
+Boat: 74%
+Boat: 67%
+Boat: 48%
+Enter Image Path: test/darknet/test_images/008e621e8edff730.jpg: Predicted in 11.873555 seconds.
+Boat: 36%
+Enter Image Path: test/darknet/test_images/005eacbd7488e94c.jpg: Predicted in 13.110828 seconds.
+Boat: 96%
+Enter Image Path: test/darknet/test_images/0026eab2f53bd687.jpg: Predicted in 11.783399 seconds.
+Boat: 83%
+Enter Image Path: test/darknet/test_images/004cf25099d40dc3.jpg: Predicted in 11.634689 seconds.
+Enter Image Path: test/darknet/test_images/0079c70fc115d8db.jpg: Predicted in 11.786422 seconds.
+Boat: 60%
+Enter Image Path: test/darknet/test_images/002e3728932fc244.jpg: Predicted in 12.352729 seconds.
+Boat: 92%
+Enter Image Path: test/darknet/test_images/0009f04d5bced171.jpg: Predicted in 12.224400 seconds.
