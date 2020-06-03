@@ -9,6 +9,12 @@ __pycache__/
 .tsv
 *.tsv
 
+.weights
+*.weights
+
+.h5
+*.h5
+
 
 # C extensions
 *.so
