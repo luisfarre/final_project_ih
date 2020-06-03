@@ -9,7 +9,7 @@ https://storage.googleapis.com/openimages/web/download.html
 Te idea of the project is to train a neuronal network capable of detecting classes of objects.
 As working with images need high computational resourses the project is developed in google cloud, using a Tesla K80 GPU.
 
-#### Creating the Dataset (notebook 0)
+### Generating the Dataset from Open Images (notebook 0)
 
 The real dataset has around 9 million images, and 6k classes. In order to make this project doable we decided to do the hole process just for one class. In that case boats images.
 
@@ -29,13 +29,11 @@ images_data_boat_project.tsv file https://storage.googleapis.com/data_images_ih/
 
 google cloud storage bucket - https://console.cloud.google.com/storage/browser/data_images_ih 
 
-### Create google cloud bucket
+### Create google cloud bucket (Manual action)
 
-- Upload .tsv file
+- Upload .tsv file to google cloud bucket https://console.cloud.google.com/storage/browser/data_images_ih
 
-
-#### Image preprocessing, creating X_data and y_data (notebook 1)
-
+### Image preprocessing and create directories (notebook 1)
 
 - Access the bucket
 - Clone darknet and create gpu version.
@@ -45,6 +43,7 @@ google cloud storage bucket - https://console.cloud.google.com/storage/browser/d
 - Check example to make sure images are the right size and lebels match expectations.
 
 ### Train, validation, test split (notebook 2)
+
 Once you have decided how many images you want to use it's time to split those images into three diferent sets. 
 - Training set: 80% of the images, the network will use those images to train.
 - Validation set: 10% of the images, will be used while training to check how well is doing and then update weights and iterate again.
@@ -61,12 +60,18 @@ To be able to train the model we need to set up the configuration. That means sp
 Having this set up, we are ready to start training. To help the model train we use pre trained darknet53.conv.74 weights.
 
 ### Loss, IOU and Test (notebook 4)
+
 In order to visualize how well the training is going we create two charts using train_log.txt data.
 - Loss: we want it to be as close as possible to 0.
 - IOU: we want it to be as close as possible to 1.
 
 Now is time to use the model with data never seen before and check how well predicts. For that we use test set.
 
+### Export Test Images (notebook 5)
 
-#### Doubts
+We had an issue with google cloud and we wern't able to run the tests there. In order to run the tests we exported the images and the labels and run the test on local laptop.
 
+
+### Result (notebook 6)
+
+We finaly use Regex to read the results file and transform it into a dataframe in order to do Data Analysis with it
